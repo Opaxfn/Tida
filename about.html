@@ -214,12 +214,16 @@
                       <div class="text-wrapper">
                         <p class="text has_fade_anim">Digital advertising specialists, committed to transforming your challenges into growth opportunities.</p>
                       </div>
-                      <div class="btn-wrapper has_fade_anim" data-fade-from="top" data-fade-offset="100"
-                        data-ease="bounce">
-                        <div class="btn-wrapper btn-move">
-                          <a href="team.html" class="wc-btn wc-btn-circle btn-hover-bgchange btn-item">The Team <br></a>
+                      
+                        <div class="btn-wrapper has_fade_anim" data-fade-from="top" data-fade-offset="100"
+                          data-ease="bounce">
+                          
+                          <div class="btn-wrapper btn-move">
+                            <p class="wc-btn wc-btn-circle btn-hover-bgchange btn-item">Start The Process<br></p>
+                          </div>
+                        
                         </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -248,7 +252,8 @@
             <div class="container">
               <div class="process-area-inner section-spacing">
                 <div class="process-wrapper-box">
-                  <div class="process-wrapper" style="grid-template-columns: repeat(3, 1fr);">
+
+                  <div class="process-wrapper" id="pc" style="grid-template-columns: repeat(3, 1fr);">
                     <div class="process-box has_fade_anim" data-fade-from="left" data-delay="0.15">
                       <div class="thumb">
                         <img class="show-light" src="assets/imgs/icon/icon-s-12.webp" alt="process icon">
@@ -282,6 +287,43 @@
                     </div>
                     
                   </div>
+
+                  <div class="process-wrapper" id="mobile">
+                    <div class="process-box has_fade_anim" data-fade-from="left" data-delay="0.15">
+                      <div class="thumb">
+                        <img class="show-light" src="assets/imgs/icon/icon-s-12.webp" alt="process icon">
+                        <img class="show-dark" src="assets/imgs/icon/icon-s-12-light.webp" alt="process icon">
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Total confidence</h3>
+                        <p class="text">We commit to complete transparency regarding all our actions and the data we use.</p>
+                      </div>
+                    </div>
+                    <div class="process-box has_fade_anim" data-fade-from="left" data-delay="0.30">
+                      <div class="thumb">
+                        <img class="show-light" src="assets/imgs/icon/icon-s-13.webp" alt="process icon">
+                        <img class="show-dark" src="assets/imgs/icon/icon-s-13-light.webp" alt="process icon">
+                      </div>
+                      <div class="content">
+                        <h3 class="title">WE take the risk</h3>
+                        <p class="text">At TDIA, we don't make excuses. We take full responsibility for the outcomes of our partnership.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="process-box has_fade_anim" data-fade-from="left" data-delay="0.45">
+                      <div class="thumb">
+                        <img class="show-light" src="assets/imgs/icon/icon-s-14.webp" alt="process icon">
+                        <img class="show-dark" src="assets/imgs/icon/icon-s-14-light.webp" alt="process icon">
+                      </div>
+                      <div class="content">
+                        <h3 class="title">Tech always beats no Teach</h3>
+                        <p class="text">We stay at the forefront of technology to optimize performance and ensure exceptional results.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -657,7 +699,21 @@
 
 
   </script>
-
+    <script>
+      if (window.innerWidth < 500) {
+  
+        document.getElementById("pc").style.display = "none";
+  
+      }
+      
+      if (window.innerWidth > 500) {
+  
+        document.getElementById("mobile").style.display = "none";
+        
+      }
+  
+      
+    </script>
 </body>
 
 </html>

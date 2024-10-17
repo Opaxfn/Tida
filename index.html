@@ -142,7 +142,7 @@
     <div class="container large">
       <div class="header-area__inner">
         <div class="header__logo">
-          <a href="#">
+           <a href="index.html">
             <img src="assets/images/logo.png" height="150px" alt="Site Logo">
           </a>
         </div>
@@ -345,16 +345,24 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title has_fade_anim">Management of ADVERTISING CAMPAIGNS.</h2>
-                      <br>
-                      <h3>We take care of EVERYTHING!</h3>
-                      <br>
-                        <p>Our Data Performance team uses advanced techniques to manage campaigns at the margin, thus maximizing performance and ROI.</p>
-                        <br>
-                        <h3>Complete transparency</h3>
-
-                    <p>Every week, we conduct a detailed check-up to evaluate friction points and identify strategic solutions to continuously improve campaign performance.</p>
+                      <h2 class="section-title has_fade_anim">Management of ADVERTISING CAMPAIGNS</h2>
                     </div>
+                    <hr>
+                    <br>
+                    <div class="title-wrapper">
+                      <h3 class="text has_fade_anim">We take care of everything!</h3>
+                      <br>
+                      
+                        <p class="text has_fade_anim">Our Data Performance team uses advanced techniques to manage campaigns at the margin, thus maximizing performance and ROI.</p>
+                        <br>
+                        
+                        
+                        <h3 class="text has_fade_anim">Complete transparency</h3>
+
+                    <p class="text has_fade_anim">Every week, we conduct a detailed check-up to evaluate friction points and identify strategic solutions to continuously improve campaign performance.</p>
+                    
+                    </div>
+                      
                   </div>
                 </div>
                 <div class="counter-wrapper-box">
@@ -765,7 +773,96 @@
                   </div>
                 </div>
                 <div class="team-wrapper-box">
-                  <div class="team-wrapper" style="grid-template-columns: repeat(4, 1fr);">
+
+
+                  <div class="team-wrapper" id="pc" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="team-box">
+                      <div class="thumb">
+                        <img src="assets/images/issac.png" alt="team image">
+                      </div>
+                      <div class="content">
+                        <div class="top">
+                          <h3 class="name">Isaac Mikola</h3>
+                          <p class="post">co-CEO and Founder</p>
+                        </div>
+                        <div class="wc-btn-group">
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                          <a class="wc-btn wc-btn-primary" href="">LinkedIn</a>
+                          <a class="wc-btn wc-btn-circle" href="">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="team-box">
+                      <div class="thumb">
+                        <img src="assets/images/tristan.png" alt="team image">
+                      </div>
+                      <div class="content">
+                        <div class="top">
+                          <h3 class="name">Tristan Langlais</h3>
+                          <p class="post">co-CEO and Head of Advertising</p>
+                        </div>
+                        <div class="wc-btn-group">
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                          <a class="wc-btn wc-btn-primary" href="#">Twitter</a>
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="team-box">
+                      <div class="thumb">
+                        <img src="assets/images/mahdi.png" alt="team image">
+                      </div>
+                      <div class="content">
+                        <div class="top">
+                          <h3 class="name">Mahdi Almi</h3>
+                          <p class="post">Head of Creative performance</p>
+                        </div>
+                        <div class="wc-btn-group">
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                          <a class="wc-btn wc-btn-primary" href="#">LinkedIn</a>
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="team-box">
+                      <div class="thumb">
+                        <img src="assets/images/bafing.png" alt="team image">
+                      </div>
+                      <div class="content">
+                        <div class="top">
+                          <h3 class="name">Bafing Keita</h3>
+                          <p class="post">Head of CRO & Data optimization</p>
+                        </div>
+                        <div class="wc-btn-group">
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                          <a class="wc-btn wc-btn-primary" href="#">LinkedIn</a>
+                          <a class="wc-btn wc-btn-circle" href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="team-wrapper" id="mobile">
                     <div class="team-box">
                       <div class="thumb">
                         <img src="assets/images/issac.png" alt="team image">
@@ -1143,7 +1240,21 @@
     }
 
   </script>
+  <script>
+    if (window.innerWidth < 500) {
 
+      document.getElementById("pc").style.display = "none";
+
+    }
+    
+    if (window.innerWidth > 500) {
+
+      document.getElementById("mobile").style.display = "none";
+      
+    }
+
+    
+  </script>
 
 </body>
 
